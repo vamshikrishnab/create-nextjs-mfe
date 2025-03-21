@@ -1,0 +1,42 @@
+{
+  "name": "create-nextjs-mfe",
+  "version": "1.0.5",
+  "description": "CLI tool to create Next.js micro-frontend applications",
+  "main": "index.js",
+  "bin": {
+    "create-nextjs-mfe": "./bin/cli.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "templates"
+  ],
+  "keywords": [
+    "nextjs",
+    "microfrontend",
+    "module-federation",
+    "cli"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^9.4.1",
+    "fs-extra": "^10.1.0",
+    "inquirer": "^8.2.4",
+    "ora": "^5.4.1"
+  },
+  "peerDependencies": {
+    "@module-federation/nextjs-mf": "^6.0.7",
+    "next": "^13.0.0 || ^14.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"
+  }
+}
